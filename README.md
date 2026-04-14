@@ -1,10 +1,17 @@
 # Whitelist-check
+
 Python script for checking whitelisted domains in Virustotal environment via API
+
+---
 
 Actually this is my first script ever made in 2019 for checking whitelisted domains in Virustotal API. I had several generation of this project:
 
-Version 0.1 - Cleans a list of domains and checks each one against the VirusTotal API to identify and print out any that are flagged as malicious.
+---
 
+## Version 0.1
+Cleans a list of domains and checks each one against the VirusTotal API to identify and print out any that are flagged as malicious.
+
+```
 ready_list (raw)
      ↓
 Strip prefixes (*.  ^.  www.  etc.)
@@ -16,9 +23,14 @@ Send each domain → VirusTotal API
 Check response for threat indicators
      ↓
 Print flagged malicious domains
+```
 
-Version 0.2 - This code differs by adding a two API calls per domain, rate limiting and an extra threat check
+---
 
+## Version 0.2
+This code differs by adding a two API calls per domain, rate limiting and an extra threat check
+
+```
 whitelist.txt (raw)
      ↓
 Remove empty lines & blank characters
@@ -36,9 +48,14 @@ Send each domain → VirusTotal URL API
 Check response for 4 threat indicators
      ↓
 Print flagged malicious domains
+```
 
-Version 1 - This is the production version — cleaner code and automated reporting
+---
 
+## Version 1.0
+This is the production version — cleaner code and automated reporting
+
+```
 domains.txt
      ↓
 Remove prefixes (*. ^. via regex)
@@ -64,6 +81,4 @@ Domain flagged as vulnerable?
 Remove duplicates from vuln_list
      ↓
 Send vuln_list → Slack webhook
-
-
-
+```
