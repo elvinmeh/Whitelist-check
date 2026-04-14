@@ -1,10 +1,10 @@
 # Whitelist-check
 
-Python script for checking whitelisted domains in Virustotal environment via API
+Python script for checking whitelisted domains for enterprise network firewall in Virustotal environment via API
 
 ---
 
-Actually this is my first script ever made in 2019 for checking whitelisted domains in Virustotal API. I had several generation of this project:
+Actually this is my first script ever made in 2019 for checking whitelisted domains in Virustotal API. I had several generation of this project.
 
 ---
 
